@@ -4,7 +4,9 @@ Proyecto realizado para el desafío **Hito 3 - Pizzería Mamma Mía**, donde se 
 
 ## 🚀 Deploy
 
-Pendiente de agregar el enlace del sitio publicado.
+Enlace del proyecto en GitHub Pages:
+
+[Ver sitio web](https://cadina-sandy.github.io/Hito3-carrito-reacts/)
 
 ## 📝 Descripción
 
@@ -39,6 +41,9 @@ También incluye el componente `Home`, que recorre un arreglo de seis pizzas y m
 
 ```text
 Hito3-carrito-reacts/
+├── .github/
+│   └── workflows/
+│       └── deploy.yml
 ├── public/
 │   └── images/
 │       └── pizza.svg
@@ -60,6 +65,7 @@ Hito3-carrito-reacts/
 ├── index.html
 ├── package.json
 ├── package-lock.json
+├── vite.config.js
 └── README.md
 ```
 
@@ -98,6 +104,8 @@ npm run build
 ## ⬆️ Subida del proyecto
 
 El código fue guardado y subido a GitHub en la rama `main`. Las carpetas `node_modules` y `dist` están excluidas mediante el archivo `.gitignore`.
+
+El flujo de GitHub Actions compila el proyecto y publica la carpeta `dist` al subir cambios a `main`. En **Settings → Pages → Source** debe estar seleccionada la opción **GitHub Actions**.
 
 ## 🔗 Repositorio
 
