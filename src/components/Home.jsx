@@ -1,13 +1,13 @@
 import React from "react";
-import Header from "./Header";
+import Inicio from "./Inicio";
 import CardPizza from "./CardPizza";
 import { pizzas } from "../data/pizzas";
 
 
 function Home() {
   return (
-    <main>
-      <Header />
+    <section className="home">
+      <Inicio />
 
       {/* Creamos una tarjeta por cada pizza del arreglo. */}
       <section className="pizza-grid" aria-label="Nuestras pizzas">
@@ -21,7 +21,7 @@ function Home() {
           />
         ))}
       </section>
-    </main>
+    </section>
   );
 }
 

@@ -3,11 +3,11 @@ import { pizzaCart } from "../data/pizzas";
 
 
 function Cart() {
-  // Guardamos las cantidades actuales sin modificar los datos originales.
+  // Estado del carrito.
   const [cart, setCart] = useState(pizzaCart);
 
 
-  // Solo aumentamos la cantidad de la pizza seleccionada.
+  // Aumentar la cantidad.
   function aumentarCantidad(id) {
     setCart((currentCart) =>
       currentCart.map((pizza) =>
@@ -17,7 +17,7 @@ function Cart() {
   }
 
 
-  // Después de restar, quitamos las pizzas que quedaron en cero.
+  // Disminuir la cantidad y eliminar si llega a cero.
   function disminuirCantidad(id) {
     setCart((currentCart) =>
       currentCart
@@ -29,7 +29,7 @@ function Cart() {
   }
 
 
-  // El total se calcula otra vez cada vez que cambia el carrito.
+  // Total del pedido.
   const total = cart.reduce(
     (acumulado, pizza) => acumulado + pizza.price * pizza.count,
     0
@@ -37,13 +37,13 @@ function Cart() {
 
 
   return (
-    <main className="cart">
+    <section className="cart">
       <h1>Detalles del pedido:</h1>
       <p>Revisa aqui tus pizzas.</p>
 
       {cart.length === 0 && <p>Tu carrito está vacío.</p>}
 
-      {/* Mostramos imagen, nombre, precio unitario y cantidad. */}
+      {/* Pizzas del carrito. */}
       <div className="cart-items">
         {cart.map((pizza) => (
           <article className="cart-row" key={pizza.id}>
@@ -79,10 +79,10 @@ function Cart() {
 
       <h2 aria-live="polite">Total: ${total.toLocaleString("es-CL")}</h2>
 
-      {/* El pago todavía no tiene una acción, tal como pide la guía. */}
+      {/* Botón sin acción por ahora. */}
       <button type="button" className="dark-button">Pagar</button>
       <p className="payment-note">El pago estara disponible próximamente.</p>
-    </main>
+    </section>
   );
 }
 

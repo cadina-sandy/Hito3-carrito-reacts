@@ -1,13 +1,9 @@
-import React from "react";
-
-
 function Footer() {
   return (
-    <footer>
-      © Pizzería Mamma Mía. Todos los derechos reservados.
+    <footer className="site-footer">
+      <p>Hecho por Sandy Cadin</p>
     </footer>
-  );
+  )
 }
 
-
-export default Footer;
+export default Footer

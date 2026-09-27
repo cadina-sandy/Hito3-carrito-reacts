@@ -1,12 +1,11 @@
-import React from "react";
-import Navbar from "./components/Navbar";
-import Cart from "./components/Cart";
-import Footer from "./components/Footer";
+import Navbar from "./components/Navbar.jsx";
+import Cart from "./components/Cart.jsx";
+import Footer from "./components/Footer.jsx";
 
-// Componentes reservados para revisar los otros hitos.
-// import Home from "./components/Home";
-// import LoginPage from "./components/LoginPage";
-// import RegisterPage from "./components/RegisterPage";
+// Conservamos los formularios completos del Hito 2 para los próximos hitos.
+// import Login from "./components/Login.jsx";
+// import Registro from "./components/Registro.jsx";
+// import Home from "./components/Home.jsx";
 
 
 function App() {
@@ -14,11 +13,13 @@ function App() {
     <div className="app">
       <Navbar />
 
-      {/* <Home /> */}
-      {/* <LoginPage /> */}
-      {/* <RegisterPage /> */}
+      <main className="main-content">
+        {/* <Home /> */}
+        {/* <Login /> */}
+        {/* <Registro /> */}
 
-      <Cart />
+        <Cart />
+      </main>
 
       <Footer />
     </div>

@@ -1,10 +1,10 @@
 # 🍕 Hito 3 de Pizzería Mamma Mía - Carrito
 
-Proyecto realizado para el desafío **Hito 3 - Pizzería Mamma Mía**, donde se implementa la renderización dinámica de componentes y un carrito de compras utilizando React.
+Proyecto realizado para el desafío **Hito 3 - Pizzería Mamma Mía**, donde se continúa el proyecto del Hito 2 agregando la renderización dinámica de componentes y un carrito de compras en React.
 
 ## 🚀 Deploy
 
-Pendiente de agregar el enlace del sitio publicado.
+Publicación pendiente.
 
 ## 📝 Descripción
 
@@ -33,38 +33,37 @@ También incluye el componente `Home`, que recorre un arreglo de seis pizzas y m
 - CSS3
 - JavaScript
 - React
+- Vite (configuración del Hito 2)
 
 ## 📁 Estructura del proyecto
 
 ```text
 Hito3-carrito-reacts/
-├── public/
-│   └── images/
-│       └── pizza.svg
 ├── src/
 │   ├── components/
 │   │   ├── CardPizza.jsx
 │   │   ├── Cart.jsx
 │   │   ├── Footer.jsx
-│   │   ├── Header.jsx
 │   │   ├── Home.jsx
-│   │   ├── LoginPage.jsx
+│   │   ├── Inicio.jsx
+│   │   ├── Login.jsx
 │   │   ├── Navbar.jsx
-│   │   └── RegisterPage.jsx
+│   │   └── Registro.jsx
 │   ├── data/
 │   │   └── pizzas.js
 │   ├── App.jsx
-│   ├── index.css
-│   └── main.jsx
+│   ├── main.jsx
+│   └── styles.css
 ├── index.html
 ├── package.json
 ├── package-lock.json
+├── vite.config.js
 └── README.md
 ```
 
 ## ⚙️ Cómo funciona
 
-En `App.jsx` se muestran los componentes `Navbar`, `Cart` y `Footer`. Los componentes `Home`, `LoginPage` y `RegisterPage` quedan comentados.
+En `App.jsx` se muestran los componentes `Navbar`, `Cart` y `Footer`. Los componentes `Home`, `Login` y `Registro` quedan comentados, conservando los formularios y sus validaciones del Hito 2.
 
 En `Home.jsx` se importa el arreglo `pizzas` y se utiliza `map()` para crear un componente `CardPizza` por cada pizza. Cada tarjeta recibe la información mediante props y recorre los ingredientes para mostrarlos en una lista.
 
@@ -72,9 +71,11 @@ En `Cart.jsx` se utiliza el hook `useState` para guardar el arreglo `pizzaCart`.
 
 El total se calcula con `reduce()`, sumando el precio de cada pizza multiplicado por su cantidad. Los valores se muestran con separador de miles utilizando `toLocaleString("es-CL")`.
 
-Los datos e imágenes provienen del archivo de apoyo `pizzas.js`. Los componentes de registro e inicio de sesión son de reserva y no incluyen formularios ni validaciones en esta versión creada desde cero.
+Los datos e imágenes provienen del archivo de apoyo `pizzas.js`. Se conservan los formularios de registro e inicio de sesión del Hito 2, junto con sus validaciones, sus estilos y el pie de página **Hecho por Sandy Cadin**.
 
 ## 💻 Ejecutar el proyecto
+
+Se conserva la configuración de React y Vite del Hito 2.
 
 Para instalar las dependencias:
 
@@ -94,9 +95,11 @@ Para compilar el proyecto:
 npm run build
 ```
 
+Para revisar Home o los formularios, descomenta su importación y su componente en `App.jsx`, y comenta `<Cart />`. Para la evaluación del Hito 3, se deja visible el carrito.
+
 ## ⬆️ Subida del proyecto
 
-El código fue guardado y subido a GitHub en la rama `main`. Las carpetas `node_modules` y `dist` están excluidas mediante el archivo `.gitignore`.
+El código fue guardado y subido a GitHub en la rama `main`. Las carpetas `node_modules` y `dist` no se suben al repositorio.
 
 ## 🔗 Repositorio
 

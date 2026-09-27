@@ -1,20 +1,17 @@
-import React from "react";
-
-
+// Conservamos los colores y el nombre del encabezado del Hito 2.
+// En este hito los botones quedan estáticos, como indica la pauta.
 function Navbar() {
-  // La guía indica que el total de esta barra debe permanecer estático.
   return (
-    <nav className="navbar" aria-label="Navegación principal">
-      <strong>Pizzería Mamma Mía</strong>
+    <header className="site-header">
+      <span className="brand">🍕 Pizzería Mamma Mía</span>
 
-      <div className="nav-buttons">
-        <button type="button">🍕 Home</button>
-        <button type="button">🔐 Login</button>
-        <button type="button">🔐 Register</button>
-      </div>
-
-      <button type="button" className="nav-total">🛒 Total: $0</button>
-    </nav>
+      <nav aria-label="Navegación principal">
+        <button type="button">Inicio</button>
+        <button type="button">Registro</button>
+        <button type="button">Ingresar</button>
+        <button type="button">🛒 Total: $0</button>
+      </nav>
+    </header>
   );
 }
 

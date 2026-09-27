@@ -1,9 +1,0 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 260" role="img" aria-label="Ilustración de pizza">
-<rect width="400" height="260" fill="#f4e6d3"/>
-<ellipse cx="200" cy="142" rx="120" ry="105" fill="#c99c63"/>
-<circle cx="200" cy="130" r="105" fill="#dc9d49"/>
-<circle cx="200" cy="130" r="92" fill="#c44b35"/>
-<circle cx="200" cy="130" r="84" fill="#f3cc6b"/>
-<g fill="#b84431"><circle cx="166" cy="80" r="16"/><circle cx="238" cy="89" r="16"/><circle cx="146" cy="144" r="16"/><circle cx="206" cy="132" r="16"/><circle cx="250" cy="164" r="16"/><circle cx="188" cy="192" r="16"/></g>
-<g fill="#5d833c"><ellipse cx="197" cy="67" rx="7" ry="12"/><ellipse cx="165" cy="177" rx="7" ry="12"/><ellipse cx="251" cy="123" rx="7" ry="12"/><ellipse cx="209" cy="165" rx="7" ry="12"/></g>
-</svg>
