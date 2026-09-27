@@ -4,7 +4,7 @@ Proyecto realizado para el desafío **Hito 3 - Pizzería Mamma Mía**, donde se 
 
 ## 🚀 Deploy
 
-Publicación pendiente.
+[Ver sitio web en GitHub Pages](https://cadina-sandy.github.io/Hito3-carrito-reacts/)
 
 ## 📝 Descripción
 
@@ -39,6 +39,9 @@ También incluye el componente `Home`, que recorre un arreglo de seis pizzas y m
 
 ```text
 Hito3-carrito-reacts/
+├── .github/
+│   └── workflows/
+│       └── deploy.yml
 ├── src/
 │   ├── components/
 │   │   ├── CardPizza.jsx
@@ -99,7 +102,7 @@ Para revisar Home o los formularios, descomenta su importación y su componente 
 
 ## ⬆️ Subida del proyecto
 
-El código fue guardado y subido a GitHub en la rama `main`. Las carpetas `node_modules` y `dist` no se suben al repositorio.
+El código fue guardado y subido a GitHub en la rama `main`. Las carpetas `node_modules` y `dist` no se suben al repositorio. GitHub Actions compila el proyecto y publica el resultado en GitHub Pages al subir cambios a `main`.
 
 ## 🔗 Repositorio
 
