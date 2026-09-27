@@ -3,7 +3,7 @@ export const pizzas = [
   {
     desc: "La pizza napolitana, de masa tierna y delgada pero bordes altos, es la versión propia de la cocina napolitana de la pizza redonda. El término pizza napoletana, por su importancia histórica o regional, se emplea en algunas zonas como sinónimo de pizza tonda.",
     id: "P001",
-    img: import.meta.env.BASE_URL + "images/pizza-napolitana.jpg",
+    img: import.meta.env.BASE_URL + "images/pizza.jpg",
     ingredients: ["mozzarella", "tomates", "jamón", "orégano"],
     name: "napolitana",
     price: 5950,
@@ -11,7 +11,7 @@ export const pizzas = [
   {
     desc: "La pizza es una preparación culinaria que consiste en un pan plano, habitualmente de forma circular, elaborado con harina de trigo, levadura, agua y sal (a veces aceite de oliva) que comúnmente se cubre con salsa de tomate, queso y otros muchos ingredientes, y que se hornea a alta temperatura, tradicionalmente en un horno de leña.",
     id: "P002",
-    img: import.meta.env.BASE_URL + "images/pizza-espanola.jpg",
+    img: import.meta.env.BASE_URL + "images/pizza.jpg",
     ingredients: ["mozzarella", "tomates", "jamón", "choricillo"],
     name: "española",
     price: 7250,
@@ -27,7 +27,7 @@ export const pizzas = [
   {
     desc: "La pizza es una preparación culinaria que consiste en un pan plano, habitualmente de forma circular, elaborado con harina de trigo, levadura, agua y sal (a veces aceite de oliva) que comúnmente se cubre con salsa de tomate, queso y otros muchos ingredientes, y que se hornea a alta temperatura, tradicionalmente en un horno de leña.",
     id: "P004",
-    img: import.meta.env.BASE_URL + "images/pizza-espanola.jpg",
+    img: import.meta.env.BASE_URL + "images/pizza.jpg",
     ingredients: ["mozzarella", "salame", "aceitunas", "champiñones"],
     name: "cuatro estaciones",
     price: 9590,
@@ -43,7 +43,7 @@ export const pizzas = [
   {
     desc: "La pizza es una preparación culinaria que consiste en un pan plano, habitualmente de forma circular, elaborado con harina de trigo, levadura, agua y sal (a veces aceite de oliva) que comúnmente se cubre con salsa de tomate, queso y otros muchos ingredientes, y que se hornea a alta temperatura, tradicionalmente en un horno de leña.",
     id: "P006",
-    img: import.meta.env.BASE_URL + "images/pizza-napolitana.jpg",
+    img: import.meta.env.BASE_URL + "images/pizza.jpg",
     ingredients: ["mozzarella", "pimientos", "pollo grillé", "orégano"],
     name: "pollo picante",
     price: 8500,
@@ -57,14 +57,14 @@ export const pizzaCart = [
     name: "napolitana",
     price: 5950,
     count: 1,
-    img: import.meta.env.BASE_URL + "images/pizza-napolitana.jpg",
+    img: import.meta.env.BASE_URL + "images/pizza.jpg",
   },
   {
     id: "P002",
     name: "española",
     price: 7250,
     count: 1,
-    img: import.meta.env.BASE_URL + "images/pizza-espanola.jpg",
+    img: import.meta.env.BASE_URL + "images/pizza.jpg",
   },
   {
     id: "P003",

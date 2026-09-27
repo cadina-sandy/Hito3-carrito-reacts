@@ -114,8 +114,6 @@ El código fue guardado y subido a GitHub en la rama `main`. Las carpetas `node_
 
 ## 📷 Imágenes
 
-Fotografías ilustrativas de Wikimedia Commons; algunas se reutilizan entre las tarjetas.
+Se utiliza una fotografía ilustrativa de pizza en las tarjetas y el carrito, guardada en `public/images/pizza.jpg`.
 
-- [PizzaMargherita](https://commons.wikimedia.org/wiki/File:PizzaMargherita.jpg), SIG SG 510, CC0.
-- [Pepperoni pizza](https://commons.wikimedia.org/wiki/File:Pepperoni_pizza.jpg), Jon Sullivan, dominio público.
-- [Closeup of a pepperoni pizza](https://commons.wikimedia.org/wiki/File:Closeup_of_a_pepperoni_pizza.jpg), Wikimedia Commons.
+Fuente: [Pepperoni pizza](https://commons.wikimedia.org/wiki/File:Pepperoni_pizza.jpg), de Jon Sullivan, dominio público.
