@@ -74,7 +74,7 @@ En `Cart.jsx` se utiliza el hook `useState` para guardar el arreglo `pizzaCart`.
 
 El total se calcula con `reduce()`, sumando el precio de cada pizza multiplicado por su cantidad. Los valores se muestran con separador de miles utilizando `toLocaleString("es-CL")`.
 
-Los datos e imágenes provienen del archivo de apoyo `pizzas.js`. Se conservan los formularios de registro e inicio de sesión del Hito 2, junto con sus validaciones, sus estilos y el pie de página **Hecho por Sandy Cadin**.
+Los datos provienen del archivo de apoyo `pizzas.js`. Las imágenes originales se reemplazaron por fotografías ilustrativas guardadas en `public/images` para evitar enlaces rotos. Se conservan los formularios de registro e inicio de sesión del Hito 2, junto con sus validaciones, sus estilos y el pie de página **Hecho por Sandy Cadin**.
 
 ## 💻 Ejecutar el proyecto
 
@@ -111,3 +111,11 @@ El código fue guardado y subido a GitHub en la rama `main`. Las carpetas `node_
 ## 👩‍💻 Autora
 
 **Sandy Cadin**
+
+## 📷 Imágenes
+
+Fotografías ilustrativas de Wikimedia Commons; algunas se reutilizan entre las tarjetas.
+
+- [PizzaMargherita](https://commons.wikimedia.org/wiki/File:PizzaMargherita.jpg), SIG SG 510, CC0.
+- [Pepperoni pizza](https://commons.wikimedia.org/wiki/File:Pepperoni_pizza.jpg), Jon Sullivan, dominio público.
+- [Closeup of a pepperoni pizza](https://commons.wikimedia.org/wiki/File:Closeup_of_a_pepperoni_pizza.jpg), Wikimedia Commons.
