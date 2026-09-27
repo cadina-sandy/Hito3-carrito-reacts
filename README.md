@@ -33,7 +33,6 @@ También incluye el componente `Home`, que recorre un arreglo de seis pizzas y m
 - CSS3
 - JavaScript
 - React
-- Vite
 
 ## 📁 Estructura del proyecto
 
