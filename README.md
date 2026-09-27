@@ -106,7 +106,7 @@ El código fue guardado y subido a GitHub en la rama `main`. Las carpetas `node_
 
 ## 🔗 Repositorio
 
-[Ver repositorio en GitHub](https://github.com/cadina-sandy/Hito3-carrito-reacts)
+[Ver repositorio en GitHub](https://github.com/cadina-sandy/Hito3-carrito-reacts) link: https://cadina-sandy.github.io/Hito3-carrito-reacts/
 
 ## 👩‍💻 Autora
 
