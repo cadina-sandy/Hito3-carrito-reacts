@@ -1,43 +1,108 @@
-# Hito 3 — Pizzería Mamma Mía
+# 🍕 Hito 3 de Pizzería Mamma Mía - Carrito
 
-Proyecto básico en React y Vite, creado desde cero.
+Proyecto realizado para el desafío **Hito 3 - Pizzería Mamma Mía**, donde se implementa la renderización dinámica de componentes y un carrito de compras utilizando React.
 
-## Ejecutar
+## 🚀 Deploy
 
-```sh
+Pendiente de agregar el enlace del sitio publicado.
+
+## 📝 Descripción
+
+La aplicación muestra un carrito de compras con las pizzas del archivo de apoyo `pizzas.js`. Permite modificar las cantidades y calcular el total del pedido.
+
+También incluye el componente `Home`, que recorre un arreglo de seis pizzas y muestra una tarjeta por cada una. Para este hito, el carrito es la vista principal y `Home` queda comentado en `App.jsx`.
+
+## ✨ Funcionalidades
+
+- Mostrar seis tarjetas de pizzas en el componente Home.
+- Enviar el nombre, precio, ingredientes e imagen mediante props.
+- Mostrar cada ingrediente en un elemento de lista.
+- Mostrar la imagen, nombre, precio y cantidad de cada pizza del carrito.
+- Aumentar y disminuir la cantidad de pizzas.
+- Eliminar una pizza cuando su cantidad llega a cero.
+- Calcular el total de la compra según las cantidades.
+- Mostrar un mensaje cuando el carrito está vacío.
+- Mostrar los precios con separador de miles.
+- Incluir el botón Pagar sin funcionalidad por ahora.
+- Mantener el total del Navbar estático, como indica la pauta.
+- Adaptar la interfaz a pantallas de escritorio y dispositivos móviles.
+
+## 🛠️ Tecnologías utilizadas
+
+- HTML5
+- CSS3
+- JavaScript
+- React
+- Vite
+
+## 📁 Estructura del proyecto
+
+```text
+Hito3-carrito-reacts/
+├── public/
+│   └── images/
+│       └── pizza.svg
+├── src/
+│   ├── components/
+│   │   ├── CardPizza.jsx
+│   │   ├── Cart.jsx
+│   │   ├── Footer.jsx
+│   │   ├── Header.jsx
+│   │   ├── Home.jsx
+│   │   ├── LoginPage.jsx
+│   │   ├── Navbar.jsx
+│   │   └── RegisterPage.jsx
+│   ├── data/
+│   │   └── pizzas.js
+│   ├── App.jsx
+│   ├── index.css
+│   └── main.jsx
+├── index.html
+├── package.json
+├── package-lock.json
+└── README.md
+```
+
+## ⚙️ Cómo funciona
+
+En `App.jsx` se muestran los componentes `Navbar`, `Cart` y `Footer`. Los componentes `Home`, `LoginPage` y `RegisterPage` quedan comentados.
+
+En `Home.jsx` se importa el arreglo `pizzas` y se utiliza `map()` para crear un componente `CardPizza` por cada pizza. Cada tarjeta recibe la información mediante props y recorre los ingredientes para mostrarlos en una lista.
+
+En `Cart.jsx` se utiliza el hook `useState` para guardar el arreglo `pizzaCart`. Los botones permiten aumentar o disminuir la cantidad de cada pizza. Al llegar a cero, se utiliza `filter()` para quitarla del carrito.
+
+El total se calcula con `reduce()`, sumando el precio de cada pizza multiplicado por su cantidad. Los valores se muestran con separador de miles utilizando `toLocaleString("es-CL")`.
+
+Los datos e imágenes provienen del archivo de apoyo `pizzas.js`. Los componentes de registro e inicio de sesión son de reserva y no incluyen formularios ni validaciones en esta versión creada desde cero.
+
+## 💻 Ejecutar el proyecto
+
+Para instalar las dependencias:
+
+```bash
 npm install
+```
+
+Para iniciar el servidor de desarrollo:
+
+```bash
 npm run dev
 ```
 
-Para comprobar la compilación: `npm run build`.
+Para compilar el proyecto:
 
-## Qué incluye
+```bash
+npm run build
+```
 
-- Home recorre seis pizzas y entrega los datos por props a CardPizza.
-- CardPizza recorre los ingredientes con elementos li.
-- Cart permite sumar, restar, eliminar al llegar a cero y calcular el total.
-- Cart es la pantalla activa. Home, LoginPage y RegisterPage están comentados en App.jsx.
-- El botón Pagar y los botones de la barra no realizan acciones en este hito.
-- El total de la barra es estático.
+## ⬆️ Subida del proyecto
 
-El archivo src/data/pizzas.js es el material de apoyo proporcionado para la pauta.
-Home y Cart usan sus nombres, ingredientes, precios, cantidades y enlaces de imágenes originales.
-LoginPage y RegisterPage son componentes de reserva, porque no contamos con el Hito 2; no implementan sus validaciones.
+El código fue guardado y subido a GitHub en la rama `main`. Las carpetas `node_modules` y `dist` están excluidas mediante el archivo `.gitignore`.
 
-## Revisar Home
+## 🔗 Repositorio
 
-En src/App.jsx, comenta la importación y el uso de Cart. Descomenta la importación y el uso de Home. No es necesario agregar rutas.
+[Ver repositorio en GitHub](https://github.com/cadina-sandy/Hito3-carrito-reacts)
 
-## Tres detalles de texto pendientes
+## 👩‍💻 Autora
 
-Se dejaron intencionalmente tres tildes pendientes, sin afectar la lógica:
-
-1. «Ver mas» → «Ver más», en CardPizza.jsx.
-2. «Revisa aqui» → «Revisa aquí», en Cart.jsx.
-3. «El pago estara» → «El pago estará», en Cart.jsx.
-
-## Comprobación manual
-
-El carrito comienza con $19.190. Al sumar una Napolitana, debe mostrar $25.140.
-Al restarla, debe volver a $19.190. Al restarla otra vez, desaparece y queda $13.240.
-Al quitar todas las pizzas, debe mostrar el carrito vacío y total $0.
+**Sandy Cadin**
